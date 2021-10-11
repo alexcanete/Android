@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mi primera aplicacion</string>
+    <string name="btn_Aceptar">Aceptar</string>
+    <string name="btn_Cancelar">Cancelar</string>
+
+
+</resources>

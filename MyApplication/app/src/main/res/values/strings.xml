@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Aceptar" translatable="false">Aceptar</string>
+    <string name="Cancelar" translatable="false">Cancelar</string>
+    <string name="txtNombre" translatable="false">Nombre</string>
+    <string name="hEscribenombre" translatable="false">Escribe tu nombre</string>
+    <string name="hEscribeContrasenia" translatable="false">Escribe tu contraseña</string>
+    <string name="sIniciarSesion" translatable="false">Iniciar sesión</string>
+    <string name="btnDoble" translatable="false">Doble</string>
+    <string name="btnTriple" translatable="false">Triple</string>
+
+
+    º</resources>
