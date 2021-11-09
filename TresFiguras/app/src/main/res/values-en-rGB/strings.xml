@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Three figures</string>
+    <string name="lblVolumenes">volumes</string>
+    <string name="lblCubo">Cubes</string>
+    <string name="lblEsfera">Sphere</string>
+    <string name="lblCilindro">Cylinder</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="hLado">Enter the side</string>
+    <string name="hAltura">Enter the height</string>
+    <string name="hRadio">Enter the radius</string>
+</resources>

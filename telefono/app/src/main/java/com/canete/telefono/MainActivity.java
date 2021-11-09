@@ -18,20 +18,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.btnALex).setOnClickListener(e -> {
-            String value = "+34667323919";
+            String value = "+34665394504";
             //String data = "smsto:" + value;
            // String data = "mailto:" + value;
            // String data = "https:" + value;
             String data = "tel:" + value;
 
             Intent intent = new Intent(Intent.ACTION_CALL);
+            intent.setData( Uri.parse(data));
             /*
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData( Uri.parse(data));
+
             intent.setPackage("com.whatsapp");
             intent.putExtra(Intent.EXTRA_TEXT, "probando");
             intent.setType("text/plain");
-
+            intent.setData( Uri.parse(data));
             Intent shareIntent = Intent.createChooser(intent, null);
             startActivity(intent);
             */

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TresFiguras</string>
+    <string name="lblVolumenes">Volumenes</string>
+    <string name="lblCubo">Cubo</string>
+    <string name="lblEsfera">Esfera</string>
+    <string name="lblCilindro">Cilindro</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="hLado">Introduce el lado</string>
+    <string name="hAltura">Introduce la altura</string>
+    <string name="hRadio">Introduce el radio</string>
+
+
+</resources>

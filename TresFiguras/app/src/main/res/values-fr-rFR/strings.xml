@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"Trois chiffres "</string>
+    <string name="hRadio">Entrez le rayon</string>
+    <string name="hAltura">Entrez la hauteur</string>
+    <string name="hLado">Entrez sur le côté</string>
+    <string name="btnCalcular">Calculer</string>
+    <string name="lblCilindro">Cylindre</string>
+    <string name="lblEsfera">Sphère</string>
+    <string name="lblCubo">cube</string>
+    <string name="lblVolumenes" translatable="false">Volumes</string>
+</resources>

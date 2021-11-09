@@ -13,4 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="btnNormal" parent="Theme.Radiobutton">
+        <item name="android:width">@dimen/anchoBtn</item>
+
+    </style>
 </resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton btnManiana;
     RadioButton btnTarde ;
     RadioButton btnOnline;
-    TextView txtNombre;
+    EditText txtNombre;
     Switch swIncluirIva ;
     TextView txtDinero;
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public final int iManianaPrecio = 600;
     public final int iTardePrecio = 400;
     public final int iOnlinePrecio= 200;
-    public final double dIvaPrecio= 0.21;
+    public final float dIvaPrecio= 0.21f;
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,9 @@ public class MainActivity extends AppCompatActivity {
         btnTarde = findViewById(R.id.btnTarde);
         btnOnline = findViewById(R.id.btnOnline);
 
+        txtNombre = findViewById(R.id.txtNombre);
+        txtDinero = findViewById(R.id.txtDinero);
+
 
 
         swIncluirIva = findViewById(R.id.swIncluirIva);
@@ -60,30 +64,34 @@ public class MainActivity extends AppCompatActivity {
 
     private void calcular(){
 
-        if(txtNombre.getText().toString.length==0){
-            Toast.makeText(this,"Introduce un nombre",Toast.LENGTH_LONG).show();        }
+        if(txtNombre.getText().toString().length()==0){
+            Toast.makeText(this,"Introduce un nombre",Toast.LENGTH_SHORT).show();
+        }else{
+            int iPrecioCurso =0;
+            if (btnDam.isChecked()) {
+                iPrecioCurso= iDamPrecio;
+            }else if (btnDaw.isChecked()) {
+                iPrecioCurso= iDawPrecio;
+            }else if (btnAsir.isChecked()){
+                iPrecioCurso= iAsirPrecio;
+            }
+            if(btnManiana.isChecked()){
+                iPrecioCurso= iPrecioCurso + iManianaPrecio;
+            }else if (btnTarde.isChecked()){
+                iPrecioCurso= iPrecioCurso+ iTardePrecio;
+            }else if (btnOnline.isChecked()){
+                iPrecioCurso= iPrecioCurso + iOnlinePrecio;
+            }
 
-        int iPrecioCurso =0;
-        if (btnDam.isChecked()) {
-            iPrecioCurso= iDamPrecio;
-        }else if (btnDaw.isChecked()) {
-            iPrecioCurso= iDawPrecio;
-        }else if (btnAsir.isChecked()){
-            iPrecioCurso= iAsirPrecio;
-        }
-        if(btnManiana.isChecked()){
-            iPrecioCurso= iPrecioCurso + iManianaPrecio;
-        }else if (btnManiana.isChecked()){
-            iPrecioCurso= iPrecioCurso+ iTardePrecio;
-        }else if (btnOnline.isChecked()){
-            iPrecioCurso= iPrecioCurso + iOnlinePrecio;
+            if(swIncluirIva.isChecked()){
+                iPrecioCurso += (int) (iPrecioCurso * dIvaPrecio);
+            }
+
+            txtDinero.setText(iPrecioCurso + "");
         }
 
-        if(swIncluirIva.isChecked()){
-            iPrecioCurso= (int) (iPrecioCurso * dIvaPrecio);
-        }
 
-        txtDinero
+
 
     }
 
