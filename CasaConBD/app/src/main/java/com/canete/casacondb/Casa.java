@@ -12,8 +12,8 @@ public class Casa {
 
     }
 
-    public Casa(int idCasa, String calle, Integer NCasa, Double superficie) {
-        this.idCasa = idCasa;
+    public Casa(String calle, Integer NCasa, Double superficie) {
+
         this.calle = calle;
         this.NCasa = NCasa;
         this.superficie = superficie;

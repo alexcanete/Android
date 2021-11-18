@@ -34,13 +34,13 @@ public class CasaAdapter<view> extends RecyclerView.Adapter<CasaAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull CasaAdapter.ViewHolder holder, int position) {
 
-        String sNombre= Ciudad.lstArticulo.get(position).getNombre();
-        String sPrecio= Ciudad.lstArticulo.get(position).getPrecio() + "€";
-        String sStock= Ciudad.lstArticulo.get(position).getStock() + " Ud.";
+        String calle= Store.lstCasas.get(position).getCalle();
+        Integer NCasa= Store.lstCasas.get(position).getNCasa();
+        String superficie= Store.lstCasas.get(position).getSuperficie() + " M2";
 
-        holder.lblNombre.setText(sNombre);
-        holder.lblPrecio.setText(sPrecio);
-        holder.lblStock.setText(sStock);
+        holder.lblCalle.setText(calle);
+        holder.lblNCasa.setText(NCasa);
+        holder.lblSuperficie.setText(superficie);
 
 
 
@@ -49,7 +49,7 @@ public class CasaAdapter<view> extends RecyclerView.Adapter<CasaAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return Ciudad.lstArticulo.size();
+        return Store.lstCasas.size();
     }
 
     public void setOnClickListener(View.OnClickListener listener) {
@@ -67,15 +67,15 @@ public class CasaAdapter<view> extends RecyclerView.Adapter<CasaAdapter.ViewHold
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        TextView lblNombre;
-        TextView lblPrecio;
-        TextView lblStock;
+        TextView lblCalle;
+        TextView lblNCasa;
+        TextView lblSuperficie;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            lblNombre = itemView.findViewById(R.id.lblCalle);
-            lblPrecio = itemView.findViewById(R.id.lblNCasa);
-            lblStock = itemView.findViewById(R.id.lblSuperficie);
+            lblCalle = itemView.findViewById(R.id.lblCalle);
+            lblNCasa = itemView.findViewById(R.id.lblNCasa);
+            lblSuperficie = itemView.findViewById(R.id.lblSuperficie);
         }
     }
 }

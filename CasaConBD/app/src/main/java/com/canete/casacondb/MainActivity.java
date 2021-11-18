@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cargarData() {
-        Ciudad.lstCasas.add(new Casa("calleFalsa",  25.0, 100));
+        Store.lstCasas.add(new Casa("calleFalsa",  25, 100.6));
 
 
     }
@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         adaptador.setOnClickListener(view ->{
-            Ciudad.ArticuloSelected = recyclerview.getChildAdapterPosition(view);
+            Store.ArticuloSelected = recyclerview.getChildAdapterPosition(view);
             Intent i = new Intent(this, CasaDetalles.class);
             startActivity(i);
-            Toast.makeText(this, "Item " + Ciudad.ArticuloSelected, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Item " + Store.ArticuloSelected, Toast.LENGTH_SHORT).show();
         });
     }
 
