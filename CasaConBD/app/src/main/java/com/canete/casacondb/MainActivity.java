@@ -6,9 +6,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    Button btnAnadir = findViewById(R.id.btnAnadir);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +21,13 @@ public class MainActivity extends AppCompatActivity {
         cargarData();
         mostrarData();
 
+
+
     }
 
     private void cargarData() {
         Store.lstCasas.add(new Casa("calleFalsa",  25, 100.6));
+        Store.lstCasas.add(new Casa("calleFalsa2",  251, 24.2));
 
 
     }
@@ -39,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
             Toast.makeText(this, "Item " + Store.ArticuloSelected, Toast.LENGTH_SHORT).show();
         });
+
+    }
+
+    private void anadir(){
+
     }
 
 

@@ -17,10 +17,12 @@ public class CasaDetalles extends AppCompatActivity {
 
 
         EditText txtCalle = findViewById(R.id.txtCalle);
+        EditText txtNCasa = findViewById(R.id.txtNCasa);
+        EditText txtSuperficie = findViewById(R.id.txtSuperficie);
 
 
-        lblDetNombre.setText(Store.lstCasas.get(Store.ArticuloSelected).getCalle());
-        lblId.setText("" + Store.ArticuloSelected);
+
+
 
 
 

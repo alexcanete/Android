@@ -10,7 +10,7 @@
         android:id="@+id/txtCalle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="76dp"
         android:ems="10"
         android:hint="Calle"
         android:inputType="textPersonName"
@@ -26,20 +26,20 @@
         android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="Nº de casa"
-        android:inputType="textPersonName"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCalle" />
 
     <EditText
-        android:id="@+id/txtNCasa3"
+        android:id="@+id/txtSuperficie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:ems="10"
-        android:hint="Nº de casa"
-        android:inputType="textPersonName"
+        android:hint="Superficie"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +49,9 @@
         android:id="@+id/btnGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="60dp"
         android:text="Guardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNCasa3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSuperficie" />
 </androidx.constraintlayout.widget.ConstraintLayout>
