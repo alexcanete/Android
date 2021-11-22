@@ -34,7 +34,7 @@ public class CasaAdapter<view> extends RecyclerView.Adapter<CasaAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull CasaAdapter.ViewHolder holder, int position) {
 
-        String calle= Store.lstCasas.get(position).getCalle();
+        String  calle= Store.lstCasas.get(position).getCalle();
         Integer NCasa= Store.lstCasas.get(position).getNCasa();
         String superficie= Store.lstCasas.get(position).getSuperficie() + " M2";
 
