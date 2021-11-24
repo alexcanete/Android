@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    Button btnAnadir = findViewById(R.id.btnAnadir);
 
 
     @Override
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    private void anadir(){
 
     }
 

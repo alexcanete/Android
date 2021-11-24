@@ -39,9 +39,9 @@ public class CasaAdapter<view> extends RecyclerView.Adapter<CasaAdapter.ViewHold
         Integer NCasa= Store.lstCasas.get(position).getNCasa();
         String superficie= Store.lstCasas.get(position).getSuperficie() + "";
 
-        holder.lblCalle.setText(calle + "");
-        holder.lblNCasa.setText(NCasa + "");
-        holder.lblSuperficie.setText(superficie + "M2");
+        holder.lblCalle.setText("Calle: " + calle + "");
+        holder.lblNCasa.setText("Nº de casa: " + NCasa + "");
+        holder.lblSuperficie.setText("Superficie: " + superficie + " m²");
 
 
 
@@ -79,4 +79,6 @@ public class CasaAdapter<view> extends RecyclerView.Adapter<CasaAdapter.ViewHold
             lblSuperficie = itemView.findViewById(R.id.lblSuperficie);
         }
     }
+
+
 }
